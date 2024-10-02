@@ -138,6 +138,7 @@ main {
 }
 
 figure {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,6 +159,14 @@ figcaption {
 
 .chile, .guatemala, .hawaii, .moab-desert, .wyoming {
     color: var(--white);
+}
+
+.chile figcaption, .hawaii figcaption, .italy figcaption, .moab-desert figcaption {
+    bottom: 15px;
+}
+
+.guatemala figcaption, .iran figcaption, .ireland figcaption, .rocky-mountains figcaption, .switzerland figcaption, .uk figcaption, .usa figcaption, .wyoming figcaption {
+    top: 15px;
 }
 
 p {
@@ -229,6 +238,7 @@ form input:last-of-type {
 }
 
 /* medium */
+
 @media screen and (min-width: 880px) {
 
     header {
@@ -254,8 +264,8 @@ form input:last-of-type {
     #gallery > h2, #gallery > p {
         grid-column: 1/3;
     }
-}
 
+}
 
 /*--large--*/
 @media screen and (min-width: 1300px) {
